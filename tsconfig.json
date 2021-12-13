@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    /* Visit https://aka.ms/tsconfig.json to read more about this file */
+    "strict": true,                          
+
+    "target": "es2019",                           
+    "module": "commonjs",         
+
+    "outDir": "./dist",                     
+    "moduleResolution": "node",        
+    "baseUrl": ".",           
+
+    "paths": {
+      "@/*": ["src/*"]
+    },                           
+
+    "esModuleInterop": true,                 
+    "inlineSourceMap": false,              
+    "skipLibCheck": true,                    
+    "forceConsistentCasingInFileNames": true, 
+  },
+
+  "include": [
+    "src/**/*.ts",
+    "@types/**/*.d.ts",
+    "test/**/*.ts"
+  ],
+  "exclude": [
+    "./node_modules/*", 
+    ".vscode", 
+    "./dist",
+    "**/*.spec.ts",
+    "**/*.test.ts"
+  ]
+}
