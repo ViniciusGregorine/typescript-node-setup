@@ -5,9 +5,13 @@
       "@typescript-eslint"
     ],
     "extends": [
+      "airbnb-base",
       "eslint:recommended",
       "plugin:@typescript-eslint/eslint-recommended",
-      "plugin:@typescript-eslint/recommended"
+      "plugin:@typescript-eslint/recommended",
+      "plugin:prettier/recommended"
     ],
-    "rules": {}
+    "rules": {
+      "semi": [2,  "always"]
+    }
   }

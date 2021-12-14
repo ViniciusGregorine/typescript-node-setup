@@ -3,13 +3,13 @@
     /* Visit https://aka.ms/tsconfig.json to read more about this file */
     "strict": true,                          
 
-    "target": "es2019",                           
+    "target": "es2017",                           
     "module": "commonjs",         
 
     "outDir": "./dist",                     
-    "moduleResolution": "node",        
+    "moduleResolution": "node",   
+         
     "baseUrl": ".",           
-
     "paths": {
       "@/*": ["src/*"]
     },                           
@@ -18,6 +18,10 @@
     "inlineSourceMap": false,              
     "skipLibCheck": true,                    
     "forceConsistentCasingInFileNames": true, 
+    "removeComments": true,
+
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
   },
 
   "include": [
