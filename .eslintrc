@@ -12,6 +12,6 @@
       "plugin:prettier/recommended"
     ],
     "rules": {
-      "semi": [2,  "always"]
+      // "semi": [1,  "never"]
     }
   }
