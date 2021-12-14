@@ -16,6 +16,9 @@ a base configuration to node typescript projcts,
 6. add jest:
     1. `npm i jest -D`
     2. `npx jest --init`
+    3. `npm i ts-jest -D`
+    4. `npm i @types/jest -D`
+    5. add jest.config.js
 
 ## specifications
 - using [asdf](https://github.com/asdf-vm/asdf) to manage node version

@@ -1,6 +1,5 @@
 {
   "compilerOptions": {
-    /* Visit https://aka.ms/tsconfig.json to read more about this file */
     "strict": true,                          
 
     "target": "es2017",                           
@@ -29,11 +28,22 @@
     "@types/**/*.d.ts",
     "test/**/*.ts"
   ],
+
   "exclude": [
     "./node_modules/*", 
     ".vscode", 
     "./dist",
     "**/*.spec.ts",
     "**/*.test.ts"
-  ]
+  ],
+    "jest": {
+      "moduleFileExtensions": [
+        "js"
+      ],
+      "moduleDirectories": [
+        "node_modules",
+        "bower_components",
+        "src"
+      ]
+    }
 }
