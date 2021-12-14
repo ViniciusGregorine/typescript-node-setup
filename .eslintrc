@@ -4,14 +4,46 @@
     "plugins": [
       "@typescript-eslint"
     ],
+    "env": {
+      "node": true,
+      "jest": true
+    },
     "extends": [
       "airbnb-base",
       "eslint:recommended",
       "plugin:@typescript-eslint/eslint-recommended",
       "plugin:@typescript-eslint/recommended",
-      "plugin:prettier/recommended"
+      "plugin:prettier/recommended",
+      "eslint-plugin-import-helpers"
     ],
     "rules": {
-      // "semi": [1,  "never"]
+      "import/prefer-default-export": "off",
+      "import/extensions": [
+        "error",
+        "ignorePackages",
+        {
+          "ts": "never"
+        }
+      ],
+      "import-helpers/order-imports": [
+        "warn",
+        {
+          "newlinesBetween": "always", // new line between groups
+          "groups": [
+            "module",
+            "/^@server\/shared/",
+            "/^@/",
+            [
+              "parent",
+              "sibling",
+              "index"
+            ]
+          ],
+          "alphabetize": {
+            "order": "asc",
+            "ignoreCase": true
+          }
+        }
+      ]
     }
   }

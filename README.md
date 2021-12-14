@@ -12,6 +12,7 @@ a base configuration to node typescript projcts,
     2. add .eslintrc and .eslintignore
     3. add lint script
     4. npm i -D prettier eslint-config-prettier eslint-plugin-prettier 
+    5. add eslint configurations and plugins
 5. add ts-node-dev and tsconfig-paths
 6. add jest:
     1. `npm i jest -D`
